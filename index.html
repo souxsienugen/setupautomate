@@ -128,13 +128,27 @@
         <h2>Ready to Automate?</h2>
         <p>Tell us about your business and what you'd like to automate. We'll get back to you within 24 hours.</p>
         
-        <div style="margin: 30px auto; max-width: 400px;">
-            <p style="font-size: 1.1rem; margin-bottom: 15px;">📧 <strong>hello@setupautomate.com</strong></p>
-            <p style="opacity: 0.7; font-size: 0.9rem;">Click to email us directly (works with any email client or webmail)</p>
-            <a href="mailto:hello@setupautomate.com?subject=SetupAutomate Inquiry" class="cta" style="margin-top: 15px; display: inline-block;">Send us an Email</a>
+        <form action="https://formsubmit.co/hello@setupautomate.com" method="POST" style="max-width: 500px; margin: 30px auto; text-align: left;">
+            <input type="hidden" name="_subject" value="SetupAutomate Inquiry">
+            <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; margin-bottom: 15px;">
+            <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; margin-bottom: 15px;">
+            <input type="text" name="company" placeholder="Company Name (optional)" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; margin-bottom: 15px;">
+            <select name="budget" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; margin-bottom: 15px;">
+                <option value="">Select Your Budget</option>
+                <option value="500-1000">$500 - $1,000</option>
+                <option value="1000-2500">$1,000 - $2,500</option>
+                <option value="2500-5000">$2,500 - $5,000</option>
+                <option value="retainer">Monthly Retainer ($300+)</option>
+            </select>
+            <textarea name="message" placeholder="What tasks would you like to automate?" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; min-height: 120px; margin-bottom: 15px;"></textarea>
+            <button type="submit" style="width: 100%; background: #00d4aa; color: #1a1a2e; padding: 15px; border: none; border-radius: 6px; font-size: 1rem; font-weight: bold; cursor: pointer;">Send Message</button>
+        </form>
+        
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd;">
+            <p style="opacity: 0.7;">Or email us directly: <strong>hello@setupautomate.com</strong></p>
         </div>
         
-        <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid #ddd;">
+        <div style="margin-top: 30px; padding-top: 30px; border-top: 1px solid #ddd;">
             <h3>💳 Payment Options</h3>
             <p style="margin-top: 15px;">Pay via PayPal to: <strong>hello@setupautomate.com</strong></p>
             <a href="https://paypal.com" target="_blank" class="cta" style="margin-top: 15px; background: #003087;">Pay with PayPal</a>
